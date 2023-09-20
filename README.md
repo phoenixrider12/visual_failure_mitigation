@@ -1,2 +1,2 @@
-# learning_from_failure
-Code for our paper on visual controller anomalies
+# Visual Controller Anomalies Detection and Mitigation
+Code for our paper "Detecting and Mitigating System-Level Anomalies of Vision-Based Controllers"
