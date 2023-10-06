@@ -2,6 +2,7 @@
 Code for our paper "Detecting and Mitigating System-Level Anomalies of Vision-Based Controllers"
 
 # Citation
+If you find our work useful for your research, please cite:
 ```
 @article{gupta2023detecting,
   title={Detecting and Mitigating System-Level Anomalies of Vision-Based Controllers},
