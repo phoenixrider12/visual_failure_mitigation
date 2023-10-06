@@ -20,10 +20,10 @@ pip install -r requirements.txt
 ```
 
 # Dataset
-We prepared a [dataset](https://drive.google.com/file/d/1ju_b36NQky_42wPzY5sLQuSNsgLISC8T/view) with varying environmental conditions using 3 Times of Day(morning, evening, and night), 2 Cloud Conditions(clear and overcast), and 5 different Runways(KMWH, KATL, PAEI, KSFO, and KEWR). We collected 20k images for each case. The total dataset size is 60GB, and you can download it using the following steps:
+We prepared a [dataset](https://drive.google.com/file/d/1ju_b36NQky_42wPzY5sLQuSNsgLISC8T/view) with varying environmental conditions using 3 Times of Day(morning, evening, and night), 2 Cloud Conditions(clear and overcast), and 5 different Runways(KMWH, KATL, PAEI, KSFO, and KEWR). We collected 20k images for each case. The total dataset size is 56GB, and you can download it using the following steps:
 ```
 pip install gdown
-gdown https://drive.google.com/file/d/1ju_b36NQky_42wPzY5sLQuSNsgLISC8T/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1ju_b36NQky_42wPzY5sLQuSNsgLISC8T
 ```
 
 # Citation
