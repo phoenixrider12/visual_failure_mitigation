@@ -26,6 +26,18 @@ pip install gdown
 gdown https://drive.google.com/uc?id=1ju_b36NQky_42wPzY5sLQuSNsgLISC8T
 ```
 
+# Training Classifier
+
+# Fallback Mechanism Testing
+In our work, the training set consists of 3 Runways(KMWH, KATL, and PAEI), 2 Times of Day(morning and night), and both cloud conditions, totaling 12 cases and 240k images. Follow the below-mentioned steps for simulation testing of our framework.
+- Run the X-Plane simulator and choose the desired airport.
+- Run following commands in terminal
+```
+cd visual_controller_failure
+python simulate.py --time 17.0 --cloud 0 --use_fallback True
+```
+You can choose desired time of day and cloud condition while running the above command and select whether you want to run the safety pipeline or the default visual controller.
+
 # Citation
 If you find our work useful for your research, please cite:
 ```
