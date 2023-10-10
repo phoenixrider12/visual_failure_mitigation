@@ -1,4 +1,4 @@
-# Visual Controller Anomalies Detection and Mitigation
+# Visual Controller Failure Detection and Mitigation
 
 ## [Project Website](https://phoenixrider12.github.io/failure_mitigation) | [Paper](https://arxiv.org/pdf/2309.13475.pdf)
 
