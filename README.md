@@ -44,7 +44,7 @@ The prepare dataset.py file is specific for training on our proposed training da
 ```
 python efficientnet_inference.py
 ```
-There are reconfigurable params like TIME_OF_DAY, CLOUD_CONDITION, RUNWAY inside this file, which can be changed as per your need.
+There are reconfigurable params like TIME_OF_DAY, CLOUD_CONDITION, and RUNWAY inside this file, which can be changed as per your need.
 
 # Fallback Mechanism Testing
 In our work, the training set . Follow the below-mentioned steps for simulation testing of our framework.
@@ -52,9 +52,9 @@ In our work, the training set . Follow the below-mentioned steps for simulation 
 - Run following commands in terminal
 ```
 cd visual_controller_failure
-python simulate.py --time 17.0 --cloud 0 -- runway KMWH --use_fallback True
+python simulate.py
 ```
-You can choose desired time of day and cloud condition while running the above command and select whether you want to run the safety pipeline or the default visual controller.
+You can change params like TIME_OF_DAY, CLOUD_CONDITION, RUNWAY, START_POS, and USE_FALLBACK as per your requirements.
 
 # Citation
 If you find our work useful for your research, please cite:
