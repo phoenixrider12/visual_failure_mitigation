@@ -17,7 +17,7 @@ tfms = transforms.Compose([transforms.Resize((224, 224)),
                                                     [0.5, 0.5, 0.5])
                           ])
 
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 train_weights = 'taxinet_classifier_weights.pth'
 test_case = str(TIME_OF_DAY) + '_' + str(CLOUD_CONDITION) + '_' + RUNWAY
 

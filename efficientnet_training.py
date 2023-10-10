@@ -8,7 +8,7 @@ import torchvision
 from torch.optim import Adam
 import matplotlib.pyplot as plt
 
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 image_tensor = torch.load('taxinet_dataset.pt')
 labels = torch.load('taxinet_labels.pt')
