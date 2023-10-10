@@ -27,7 +27,8 @@ gdown https://drive.google.com/uc?id=1ju_b36NQky_42wPzY5sLQuSNsgLISC8T
 tar -zxvf taxinet_dataset.tar.gz
 ```
 You should have a folder ```dataset``` containing 30 subfolders, whose names informs about TIME_OF_DAY, CLOUD_CONDITION, and AIRPORT_ID respectively, separated by underscore.
-# Training Classifier
+
+# Training Anomaly Detector
 
 Prepare the dataset (need to run only once)
 ```
@@ -39,13 +40,18 @@ python efficientnet_training.py
 ```
 The prepare dataset.py file is specific for training on our proposed training dataset consisting of 3 runways(KMWH, KATL, and PAEI), 2 times of day(morning and night), and both cloud conditions, totaling 12 cases and 240k images. For training on different cases, you can modify the prepare_dataset.py file and then train the network.
 
+# Testing Anomaly Detector
+```
+python efficientnet_inference.py --time 17.0 --cloud 0 --runway KMWH
+```
+
 # Fallback Mechanism Testing
 In our work, the training set . Follow the below-mentioned steps for simulation testing of our framework.
 - Run the X-Plane simulator and choose the desired airport.
 - Run following commands in terminal
 ```
 cd visual_controller_failure
-python simulate.py --time 17.0 --cloud 0 --use_fallback True
+python simulate.py --time 17.0 --cloud 0 -- runway KMWH --use_fallback True
 ```
 You can choose desired time of day and cloud condition while running the above command and select whether you want to run the safety pipeline or the default visual controller.
 
