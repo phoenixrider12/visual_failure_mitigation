@@ -6,12 +6,10 @@ from sklearn.metrics import confusion_matrix, recall_score, accuracy_score
 import matplotlib.pyplot as plt
 import pandas as pd
 import math
-import configargparse
 
-p = configargparse.ArgumentParser()
-p.add_argument('--time', type=int, help='time of day')
-p.add_argument('--cloud', type=int, help='cloud condition')
-p.add_argument('--runway', type=str, help='runway ID')
+TIME_OF_DAY = 17.0
+CLOUD_CONDITION = 0
+RUNWAY = 'KMWH'
 
 tfms = transforms.Compose([transforms.Resize((224, 224)),
                                transforms.ToTensor(),
@@ -21,7 +19,7 @@ tfms = transforms.Compose([transforms.Resize((224, 224)),
 
 device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
 train_weights = 'taxinet_classifier_weights.pth'
-test_case = str(p.parse_args().time) + '_' + str(p.parse_args().cloud) + '_' + str(p.parse_args().runway)
+test_case = str(TIME_OF_DAY) + '_' + str(CLOUD_CONDITION) + '_' + RUNWAY
 
 data_dir = 'dataset/' + test_case + '/'
 labels_file = data_dir + 'labels.csv'

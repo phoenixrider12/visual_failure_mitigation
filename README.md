@@ -42,8 +42,9 @@ The prepare dataset.py file is specific for training on our proposed training da
 
 # Testing Anomaly Detector
 ```
-python efficientnet_inference.py --time 17.0 --cloud 0 --runway KMWH
+python efficientnet_inference.py
 ```
+There are reconfigurable params like TIME_OF_DAY, CLOUD_CONDITION, RUNWAY inside this file, which can be changed as per your need.
 
 # Fallback Mechanism Testing
 In our work, the training set . Follow the below-mentioned steps for simulation testing of our framework.
