@@ -24,8 +24,9 @@ We prepared a [dataset](https://drive.google.com/file/d/1ju_b36NQky_42wPzY5sLQuS
 ```
 pip install gdown
 gdown https://drive.google.com/uc?id=1ju_b36NQky_42wPzY5sLQuSNsgLISC8T
+tar -zxvf taxiing_dataset.tar.gz
 ```
-
+You should have a folder ```dataset``` containing 30 subfolders, whose names informs about TIME_OF_DAY, CLOUD_CONDITION, and AIRPORT_ID respectively, separated by underscore.
 # Training Classifier
 
 # Fallback Mechanism Testing
