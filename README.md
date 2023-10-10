@@ -29,8 +29,18 @@ tar -zxvf taxinet_dataset.tar.gz
 You should have a folder ```dataset``` containing 30 subfolders, whose names informs about TIME_OF_DAY, CLOUD_CONDITION, and AIRPORT_ID respectively, separated by underscore.
 # Training Classifier
 
+Prepare the dataset (need to run only once)
+```
+python prepare_dataset.py
+```
+Train classifier
+```
+python efficientnet_training.py
+```
+The prepare dataset.py file is specific for training on our proposed training dataset consisting of 3 runways(KMWH, KATL, and PAEI), 2 times of day(morning and night), and both cloud conditions, totaling 12 cases and 240k images. For training on different cases, you can modify the prepare_dataset.py file and then train the network.
+
 # Fallback Mechanism Testing
-In our work, the training set consists of 3 Runways(KMWH, KATL, and PAEI), 2 Times of Day(morning and night), and both cloud conditions, totaling 12 cases and 240k images. Follow the below-mentioned steps for simulation testing of our framework.
+In our work, the training set . Follow the below-mentioned steps for simulation testing of our framework.
 - Run the X-Plane simulator and choose the desired airport.
 - Run following commands in terminal
 ```
