@@ -6,7 +6,7 @@ mss==7.0.1
 numpy==1.24.1
 opencv-python==4.7.0.68
 pandas==1.5.3
-Pillow==9.4.0
+Pillow==10.0.1
 scipy==1.10.0
 tqdm==4.64.1
 h5py==3.8.0
