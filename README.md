@@ -47,7 +47,7 @@ python efficientnet_inference.py
 There are reconfigurable params like TIME_OF_DAY, CLOUD_CONDITION, and RUNWAY inside this file, which can be changed as per your need.
 
 # Fallback Mechanism Testing
-In our work, the training set . Follow the below-mentioned steps for simulation testing of our framework.
+Follow the below-mentioned steps for simulation testing of our framework.
 - Run the X-Plane simulator and choose the desired airport.
 - Run following commands in terminal
 ```
