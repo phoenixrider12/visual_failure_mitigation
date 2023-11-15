@@ -104,5 +104,5 @@ for i, data in enumerate(testloader):
 test_target_list = torch.cat(target).cpu().numpy()
 test_prediction_list = np.concatenate(test_prediction)
 
-print('Train Accuracy: \t', accuracy_score(test_target_list, test_prediction_list))
-print('Train Accuracy: \t', recall_score(test_target_list, test_prediction_list))
+print('Test Accuracy: \t', accuracy_score(test_target_list, test_prediction_list))
+print('Test Accuracy: \t', recall_score(test_target_list, test_prediction_list))
