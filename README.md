@@ -51,7 +51,6 @@ Follow the below-mentioned steps for simulation testing of our framework.
 - Run the X-Plane simulator and choose the desired airport.
 - Run following commands in terminal
 ```
-cd visual_controller_failure
 python simulate.py
 ```
 You can change params like TIME_OF_DAY, CLOUD_CONDITION, RUNWAY, START_POS, and USE_FALLBACK as per your requirements.
