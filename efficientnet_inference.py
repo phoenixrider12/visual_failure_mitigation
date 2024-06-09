@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import math
 
-TIME_OF_DAY = 17.0
+TIME_OF_DAY = 17
 CLOUD_CONDITION = 0
 RUNWAY = 'KMWH'
 
@@ -55,7 +55,6 @@ for i in range(20000):
 
     with torch.no_grad():
         outputs = model(inputs)
-    print(outputs)
     outputs = torch.squeeze(outputs)
     softmax = (torch.exp(outputs)/torch.exp(outputs).sum()).cpu()
     prob = list(softmax.detach().numpy())
@@ -70,7 +69,7 @@ for i in range(20000):
 predictions = np.array(predictions)
 targets = np.array(targets)
 
-tn, fp, fn, tp = confusion_matrix(predictions, targets)
+tn, fp, fn, tp = confusion_matrix(predictions, targets).ravel()
 tp = tp * 100 / len(labels)
 fp = fp * 100 / len(labels)
 tn = tn * 100 / len(labels)
