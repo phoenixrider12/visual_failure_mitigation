@@ -9,7 +9,7 @@ import math
 
 TIME_OF_DAY = 17
 CLOUD_CONDITION = 0
-RUNWAY = 'KMWH'
+RUNWAY = 'KATL'
 
 tfms = transforms.Compose([transforms.Resize((224, 224)),
                                transforms.ToTensor(),
