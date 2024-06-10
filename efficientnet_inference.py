@@ -69,7 +69,7 @@ for i in range(20000):
 predictions = np.array(predictions)
 targets = np.array(targets)
 
-tn, fp, fn, tp = confusion_matrix(predictions, targets).ravel()
+tn, fn, fp, tp = confusion_matrix(predictions, targets).ravel()
 tp = tp * 100 / len(labels)
 fp = fp * 100 / len(labels)
 tn = tn * 100 / len(labels)
