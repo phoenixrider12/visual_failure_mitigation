@@ -69,15 +69,15 @@ for i in range(20000):
 predictions = np.array(predictions)
 targets = np.array(targets)
 
-tn, fn, fp, tp = confusion_matrix(predictions, targets).ravel()
+tn, fp, fn, tp = confusion_matrix(targets, predictions).ravel()
 tp = tp * 100 / len(labels)
 fp = fp * 100 / len(labels)
 tn = tn * 100 / len(labels)
 fn = fn * 100 / len(labels)
 
 print('TP:', tp, 'FP:', fp, 'TN:', tn, 'FN:', fn)
-print('Recall: ', recall_score(predictions, targets))
-print('Accuracy: ', accuracy_score(predictions, targets))
+print('Recall: ', recall_score(targets, predictions))
+print('Accuracy: ', accuracy_score(targets, predictions))
 
 incorrect_ctp=[]
 incorrect_dtp=[]
