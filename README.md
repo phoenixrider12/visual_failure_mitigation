@@ -65,3 +65,8 @@ If you find our work useful for your research, please cite:
   year={2023}
 }
 ```
+
+# Contact
+Feel free to reach out to the authors for any queries regarding this project.
+- Aryaman Gupta (aryamang@usc.edu)
+- Kaustav Chakraborty (kaustavc@usc.edu)
