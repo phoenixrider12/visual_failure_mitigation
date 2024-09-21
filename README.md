@@ -1,6 +1,6 @@
 # Visual Controller Failure Detection and Mitigation
 
-## [Project Website](https://phoenixrider12.github.io/FailureMitigation) | [Paper](https://arxiv.org/pdf/2309.13475.pdf)
+## [Project Website](https://aryamangupta.site/failuremitigation) | [Paper](https://arxiv.org/pdf/2309.13475.pdf)
 
 Here is the codebase for our paper ["Detecting and Mitigating System-Level Anomalies of Vision-Based Controllers"](https://arxiv.org/pdf/2309.13475.pdf) for an aircraft taxiing problem. We present a framework for detecting system-level failures using a trained anomaly detector and implementing a fallback mechanism for safety-critical control.
 
